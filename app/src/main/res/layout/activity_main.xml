@@ -9,7 +9,7 @@
     tools:visibility="visible">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="34sp"
@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
         app:layout_constraintVertical_bias="0.068"
         tools:visibility="visible" />
 
