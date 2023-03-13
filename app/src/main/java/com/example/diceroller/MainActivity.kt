@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
             // set text view field to 5 when button is pressed
 
 
-            RollDie() // calls specific function
+            rollDie() // calls specific function
+            rollDie2()
         }
 
 
@@ -32,7 +33,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun RollDie() {
+    private fun rollDie2() {
+        val localDice = Dice(6)
+        val cubeRoll = localDice.roll()
+        val textview2:TextView = findViewById(R.id.textview2)
+        textview2.text = cubeRoll.toString()
+    }
+
+    private fun rollDie() {
         // 6 sided die created and displayed to user
         val localDice = Dice(6)
         val cubeRoll = localDice.roll()
@@ -40,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         textview.text = cubeRoll.toString()
 
     }
-    class Dice (val NumberOfSide: Int){
+    class Dice (private val NumberOfSide: Int){
         //random number generator above 1
         fun roll():Int{
             return (1..NumberOfSide).random()
